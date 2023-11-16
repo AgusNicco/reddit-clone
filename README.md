@@ -41,3 +41,38 @@ The project will be broken down into weekly tasks. Each week has a checklist of 
 - [ ] Finalize all functionalities.
 - [ ] Conduct thorough testing of the entire application.
 - [ ] Deploy the project on Azure.
+
+## Technical Requirements Checklist
+
+### HTML Mastery (20pts)
+- Form, Text, Number, Select, Reset, Submit
+- Image, Table, Hyperlinks
+- Lists (UL, OL, DL), Figure
+- Sections, Articles, Asides, Navigation
+
+### CSS Mastery (50pts)
+- Appropriate selectors, Transitions, Hover effects, nth-child usage
+- Flexbox and/or Grid for layout
+- Color scheme: Background, Text, Accent colors
+- Professional guidelines adherence, Margins, Padding, Borders
+
+### Interactivity (80pts)
+- Map and filter functions, DOM manipulation
+- Event listeners, Modular code (import/export)
+- Async-await, Promises
+- Network requests, API integration
+- Multiple pages, Query strings, Local storage
+
+## Functional Requirements
+
+- Multiple Pages (10pts)
+- Filter Bar (5pts)
+- External API Network Calls (10pts)
+- Drag & Drop (15pts)
+- Shared Layout (Header, Footer, Nav) (10pts)
+
+## Infrastructure Requirements
+
+- Back-end API in C# (25pts)
+- Hosting on Azure (10pts)
+- Additional infrastructure components as required.
