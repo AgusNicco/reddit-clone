@@ -75,4 +75,3 @@ The project will be broken down into weekly tasks. Each week has a checklist of 
 
 - Back-end API in C# (25pts)
 - Hosting on Azure (10pts)
-- Additional infrastructure components as required.
