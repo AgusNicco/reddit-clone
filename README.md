@@ -4,6 +4,10 @@
 
 This project aims to create a simplified clone of Reddit, a popular social news platform. The core functionality will include displaying posts, communities, and interactive elements, similar to Reddit's basic features. The project will be developed over a month, ensuring a comprehensive implementation of the required functionalities.
 
+Here is the repository of the backend:  https://github.com/AgusNicco/reddit-clone-api
+
+Here is how it can be called: https://reddit-clone-api.azurewebsites.net/posts/0
+
 ## Why This Project?
 
 The decision to develop a Reddit clone for this final project is driven by my fascination with the intricate functionalities and user interactions of social media platforms. As a regular user of Reddit, I have experienced firsthand the platform's unique features like community engagement, content sharing, and the dynamics of user interactions. This project provides an excellent opportunity to delve into these aspects from a developer's perspective, allowing me to understand and recreate the compelling user experience that Reddit offers. It's an endeavor that goes beyond mere coding, touching upon user interface design, user experience, and the psychology behind online community building.
