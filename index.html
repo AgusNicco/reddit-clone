@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reddit Post</title>
-<link rel="stylesheet" href="styles.css">
-<script src = script.js type="module"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit Post</title>
+  <link rel="stylesheet" href="/styles/posts-container.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
+  <link rel="stylesheet" href="/styles/post.css">
+  <link rel="stylesheet" href="/styles/body.css">
+  
+  <script src=script.js type="module"></script>
 </head>
+
 <body>
-<article class="reddit-post">
-  <header class="post-header">
-    <div class="subreddit-name">r/relationships</div>
-    <div class="posted-by">Posted by u/jordan20x1</div>
-  </header>
-  <section class="post-content">
-    <div class="post-title">has crush on coworker, doesn't know what to do.</div>
-    <div class="post-body">
-      Good morning folks of Reddit. I have been at my second job for almost two months now and it's at a small pharmacy with about 10 employees. I only work 3 hours a shift, and I usually work 3 nights out of the week...
-    </div>
+  <nav id="navbar">
+    <img src="/images/reddit-logo.png">
+
+    <a href="">Home</a>
+    <a href="">Top</a>
+    <form id="search-form">
+      <input type="text" id="search-bar" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+
+    
+  </nav>
+  <section id="posts-container">
+    
+    
   </section>
-  <footer class="post-footer">
-    <div class="upvotes">54 points</div>
-    <a href="#" class="comments-link">13 Comments</a>
-  </footer>
-</article>
 </body>
+
 </html>
