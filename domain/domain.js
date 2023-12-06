@@ -30,6 +30,9 @@ async function submitSearchHandler(event) {
     window.removeEventListener('scroll', domain.debouncedScrollHandler);
     const searchBar = document.getElementById('search-bar');
     const searchTerm = searchBar.value;
+    if (window.location.pathname !== '/index.html') {
+        window.location.href = '/index.html?search=' + searchTerm;
+    }
     console.log(searchTerm);
     const posts = await svc.fetchSearch(searchTerm);
     console.log(posts);
@@ -40,14 +43,28 @@ async function submitSearchHandler(event) {
     else {
         ui.populatePostContainer(posts, postsContainer);
     }
+    const goBackHomeButton = ui.getGoBackHomeButton();
+    postsContainer.appendChild(goBackHomeButton); 
+}
 
+async function search(term) {
+    const posts = await svc.fetchSearch(term);
+    console.log(posts);
+    const postsContainer = document.getElementById('posts-container');
+    if (posts.length === 0) {
+        postsContainer.innerHTML = 'No results found';
+    }
+    else {
+        ui.populatePostContainer(posts, postsContainer);
+    }
     const goBackHomeButton = ui.getGoBackHomeButton();
     postsContainer.appendChild(goBackHomeButton); 
 }
 
 const domain = {
     debouncedScrollHandler,
-    submitSearchHandler
+    submitSearchHandler,
+    search
 }
 export default domain;
 

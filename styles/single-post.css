@@ -5,11 +5,8 @@
     align-items: flex-start;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     width: 100%; 
+    height: 100%;
     margin-bottom: 24px;
-}
-
-.post:hover {
-    cursor: pointer;
 }
 
 .post-vote {
@@ -24,7 +21,7 @@
 .downvote {
     background: none;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .votes-count {

@@ -16,66 +16,74 @@ Tackling a project of this scale presents a myriad of technical challenges, enco
 
 Lastly, this project stands as a significant stepping stone in my professional development journey. Not only will it enhance my technical portfolio, demonstrating my capability to handle comprehensive web development projects, but it will also significantly contribute to my growth as a web developer. The experience of planning, executing, and troubleshooting a project from the ground up is invaluable, especially in a real-world context. It's an opportunity to stretch my limits, explore new technologies, and refine my approach to web development, preparing me for future endeavors in the tech industry.
 
-## Project Plan
-
-The project will be broken down into weekly tasks. Each week has a checklist of tasks, ensuring a structured approach and timely completion.
-
-### Week of Nov 17
-- [ ] Set up the project repository on GitHub.
-- [ ] Draft the initial design of the user interface.
-- [ ] Create basic HTML templates for the main pages.
-- [ ] Start working on the CSS for layout and basic styling.
-
-### Week of Nov 24
-- [ ] Develop the CSS further, focusing on color schemes, fonts, and responsive design.
-- [ ] Begin implementing JavaScript for basic interactivity.
-- [ ] Start backend development in C# for API creation.
-
-### Week of Dec 1
-- [ ] Implement advanced JavaScript functionalities like async-await and DOM manipulation.
-- [ ] Develop the API to fetch and send data in JSON format.
-- [ ] Test API integration with the front-end.
-
-### Week of Dec 8
-- [ ] Refine the user interface and user experience.
-- [ ] Complete any pending backend functionality.
-- [ ] Work on drag & drop features for the UI.
-
-### Buffer Days (Dec 8 - 13)
-- [ ] Finalize all functionalities.
-- [ ] Conduct thorough testing of the entire application.
-- [ ] Deploy the project on Azure.
 
 ## Technical Requirements Checklist
 
-### HTML Mastery (20pts)
-- Form, Text, Number, Select, Reset, Submit
-- Image, Table, Hyperlinks
-- Lists (UL, OL, DL), Figure
-- Sections, Articles, Asides, Navigation
+## HTML Mastery (20pts)
 
-### CSS Mastery (50pts)
-- Appropriate selectors, Transitions, Hover effects, nth-child usage
-- Flexbox and/or Grid for layout
-- Color scheme: Background, Text, Accent colors
-- Professional guidelines adherence, Margins, Padding, Borders
+- [X] form
+- [X] text
+- [ ] number
+- [ ] select
+- [ ] reset
+- [X] submit
+- [X] img
+- [ ] table
+- [X] a
+- [ ] ul / ol / dl
+- [ ] figure
+- [X] section / article
+- [ ] aside
+- [X] nav
 
-### Interactivity (80pts)
-- Map and filter functions, DOM manipulation
-- Event listeners, Modular code (import/export)
-- Async-await, Promises
-- Network requests, API integration
-- Multiple pages, Query strings, Local storage
+## CSS Mastery (50pts)
+
+- [X] appropriate selectors
+- [X] transitions
+- [X] hover
+- [ ] nth child
+- [X] layout (flex and/or grid)
+- [X] colors
+- [X] background colors
+- [ ] text colors
+- [ ] accent colors
+- [X] meet professional guidelinies laid out on course canvas page
+- [X] margin / padding
+- [X] border / corner radius
+
+## Interactivity (80pts)
+
+- [X] use of map and filter functions (or equivalent)
+- [X] manipulating the dom
+- [X] adding / removing event listeners
+- [X] use code across multiple files (e.g. export / import / modules)
+- [X] structured code organization (e.g. ui, domain, svc)
+- [X] async await / promises
+- [X] network requests / call API
+- [X] multiple pages
+- [X] read querystring
+- [X] local storage
 
 ## Functional Requirements
 
-- Multiple Pages (10pts)
-- Filter Bar (5pts)
-- External API Network Calls (10pts)
-- Drag & Drop (15pts)
-- Shared Layout (Header, Footer, Nav) (10pts)
+- [X] Multiple pages (10pts)
+- [X] Filter bar (somewhere) (5pts)
+- [X] Make network call(s) to external API (10pts)
+- [ ] Drag & drop (15pts)
+- [X] Shared page layout (header, footer, nav, etc.) (10pts)
 
-## Infrastructure Requirements
+## Hard Things (Infrastructure)
+(at least 25 points required, any more is extra credit)
 
-- Back-end API in C# (25pts)
-- Hosting on Azure (10pts)
+- [X] Back-end api (write your own in C# or node.js) (25pts)
+- [X] Back-end api (use a PaaS service) (20pts)
+- [ ] Host your site on GitHub pages (5pts)
+- [X] Host your site on a PaaS provider (e.g. Azure static web app, vercel, etc.) (10pts)
+- [ ] JavaScript toolchain (sass, typescript, etc.) (5pts)
+- [ ] Entire app built using a JavaScript framework (react, svelte, jQuery, vue) (15pts)
+- [ ] Use static site generator (hugo, jekyll, etc.) (10pts)
+- [ ] Write your own static site generator in C# (25pts)
+- [ ] Use Blazor WebAssembly instead of JavaScript (25pts)
+- [ ] Uploading, storing, and using files (15pts)
+- [ ] Propose your own: must be submitted and approved prior to the last day of class
+
