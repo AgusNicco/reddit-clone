@@ -6,7 +6,7 @@ This project aims to create a simplified clone of Reddit, a popular social news 
 
 Here is the repository of the backend:  https://github.com/AgusNicco/reddit-clone-api
 
-Here is how it can be called: https://reddit-clone-api.azurewebsites.net/posts/0
+Here is how it can be called: https://reddit-clone-api.azurewebsites.net/posts/
 
 ## Why This Project?
 
