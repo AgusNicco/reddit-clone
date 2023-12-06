@@ -13,5 +13,6 @@ const post = await svc.fetchPostByID(postID);
 console.log(post);
 
 const postContainer = document.getElementById('single-post-container');
+postContainer.innerHTML = '';
 const postElement = ui.createSinglePostElement(post);
 postContainer.appendChild(postElement);

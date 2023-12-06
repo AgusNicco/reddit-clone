@@ -1,6 +1,6 @@
 function createRedditPostElement(postData) {
     // Create the main post element with the class 'post'
-    const postElement = document.createElement('div');
+    const postElement = document.createElement('article');
     postElement.className = 'post';
 
     // Create the post content container
