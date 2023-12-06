@@ -53,18 +53,31 @@ function createRedditPostElement(postData) {
     // Create the voting container
     const voteContainer = document.createElement('div');
     voteContainer.className = 'post-vote';
-    const upvoteButton = document.createElement('button');
-    upvoteButton.className = 'upvote';
-    upvoteButton.textContent = '⬆️';
-    voteContainer.appendChild(upvoteButton);
+
+    // Create upvote anchor and image
+    const upvoteAnchor = document.createElement('a');
+    // upvoteAnchor.href = '#'; 
+    const upvoteImage = document.createElement('img');
+    upvoteImage.src = '/images/upvote.png';
+    upvoteImage.alt = 'Upvote';
+    upvoteAnchor.appendChild(upvoteImage);
+    voteContainer.appendChild(upvoteAnchor);
+
+    // Display the votes count
     const votesCount = document.createElement('div');
     votesCount.className = 'votes-count';
     votesCount.textContent = postData.upvotes;
     voteContainer.appendChild(votesCount);
-    const downvoteButton = document.createElement('button');
-    downvoteButton.className = 'downvote';
-    downvoteButton.textContent = '⬇️';
-    voteContainer.appendChild(downvoteButton);
+
+    // Create downvote anchor and image
+    const downvoteAnchor = document.createElement('a');
+    // downvoteAnchor.href = '#';
+    const downvoteImage = document.createElement('img');
+    downvoteImage.src = '/images/downvote.png';
+    downvoteImage.alt = 'Downvote';
+    downvoteAnchor.appendChild(downvoteImage);
+    voteContainer.appendChild(downvoteAnchor);
+
 
     // Append the vote container and post content to the main post element
     postElement.appendChild(voteContainer);
@@ -113,8 +126,8 @@ function createSinglePostElement(postData) {
     // Create and append the post title
     const postTitle = document.createElement('h2');
     postTitle.className = 'post-title';
-    postTitle.textContent = postData.summary; // Use the summary as the title
-    postContent.appendChild(postTitle); // Append after the post header
+    postTitle.textContent = postData.summary; 
+    postContent.appendChild(postTitle); 
 
     // Create and append the post body
     const postBody = document.createElement('div');
@@ -141,18 +154,30 @@ function createSinglePostElement(postData) {
     // Create the voting container
     const voteContainer = document.createElement('div');
     voteContainer.className = 'post-vote';
-    const upvoteButton = document.createElement('button');
-    upvoteButton.className = 'upvote';
-    upvoteButton.textContent = '⬆️';
-    voteContainer.appendChild(upvoteButton);
+
+    // Create upvote anchor and image
+    const upvoteAnchor = document.createElement('a');
+    // upvoteAnchor.href = '#'; 
+    const upvoteImage = document.createElement('img');
+    upvoteImage.src = '/images/upvote.png';
+    upvoteImage.alt = 'Upvote';
+    upvoteAnchor.appendChild(upvoteImage);
+    voteContainer.appendChild(upvoteAnchor);
+
+    // Display the votes count
     const votesCount = document.createElement('div');
     votesCount.className = 'votes-count';
     votesCount.textContent = postData.upvotes;
     voteContainer.appendChild(votesCount);
-    const downvoteButton = document.createElement('button');
-    downvoteButton.className = 'downvote';
-    downvoteButton.textContent = '⬇️';
-    voteContainer.appendChild(downvoteButton);
+
+    // Create downvote anchor and image
+    const downvoteAnchor = document.createElement('a');
+    // downvoteAnchor.href = '#'; 
+    const downvoteImage = document.createElement('img');
+    downvoteImage.src = '/images/downvote.png';
+    downvoteImage.alt = 'Downvote';
+    downvoteAnchor.appendChild(downvoteImage);
+    voteContainer.appendChild(downvoteAnchor);
 
     // Append the vote container and post content to the main post element
     postElement.appendChild(voteContainer);

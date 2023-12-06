@@ -17,6 +17,10 @@
     font-size: 24px;
 }
 
+a img {
+    width: 1em;
+}
+
 .upvote,
 .downvote {
     background: none;
@@ -25,8 +29,8 @@
 }
 
 .votes-count {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 0 0;
+    font-size: 15px;
 }
 
 .post-content {

@@ -8,6 +8,10 @@
     margin-bottom: 24px;
 }
 
+a img {
+    width: 1em;
+}
+
 .post:hover {
     cursor: pointer;
 }
@@ -28,8 +32,8 @@
 }
 
 .votes-count {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 0px 0;
+    font-size: 14px;
 }
 
 .post-content {
