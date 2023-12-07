@@ -14,9 +14,11 @@ async function fetchPosts() {
 async function fetchSearch(searchTerm) {
     const response = await fetch('https://reddit-clone-api.azurewebsites.net/search/'+searchTerm);
     const posts = await response.json();
-    posts.map((post) => { 
-        post.comments = Math.floor(Math.random() * 21);
-    });
+    // if posts is object
+    if (posts)
+        posts.map((post) => { 
+            post.comments = Math.floor(Math.random() * 21);
+        });
     return posts;
 }
 
