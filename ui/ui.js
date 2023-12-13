@@ -4,7 +4,7 @@ function createRedditPostElement(postData) {
     postElement.className = 'post';
 
     // Create the post content container
-    const postContent = document.createElement('div');
+    const postContent = document.createElement('article');
     postContent.className = 'post-content';
 
     // Create and append the post header with author and subreddit
@@ -25,8 +25,8 @@ function createRedditPostElement(postData) {
     // Create and append the post title
     const postTitle = document.createElement('h2');
     postTitle.className = 'post-title';
-    postTitle.textContent = postData.summary; // Use the summary as the title
-    postContent.appendChild(postTitle); // Append after the post header
+    postTitle.textContent = postData.summary; 
+    postContent.appendChild(postTitle); 
 
     // Create and append the post body
     const postBody = document.createElement('div');
@@ -42,7 +42,7 @@ function createRedditPostElement(postData) {
     const postFooter = document.createElement('div');
     postFooter.className = 'post-footer';
     const commentsLink = document.createElement('a');
-    // commentsLink.href = '#';
+
     commentsLink.className = 'comments-link';
     commentsLink.textContent = `${postData.comments} comments`;
     postFooter.appendChild(commentsLink);
@@ -56,7 +56,7 @@ function createRedditPostElement(postData) {
 
     // Create upvote anchor and image
     const upvoteAnchor = document.createElement('a');
-    // upvoteAnchor.href = '#'; 
+
     const upvoteImage = document.createElement('img');
     upvoteImage.src = '/images/upvote.png';
     upvoteImage.alt = 'Upvote';
@@ -71,7 +71,7 @@ function createRedditPostElement(postData) {
 
     // Create downvote anchor and image
     const downvoteAnchor = document.createElement('a');
-    // downvoteAnchor.href = '#';
+
     const downvoteImage = document.createElement('img');
     downvoteImage.src = '/images/downvote.png';
     downvoteImage.alt = 'Downvote';
@@ -83,12 +83,18 @@ function createRedditPostElement(postData) {
     postElement.appendChild(voteContainer);
     postElement.appendChild(postContent);
 
+
     postElement.addEventListener('click', () => {
         window.location.href = '/post.html?id=' + postData.id;
     });
-    // Return the complete post element
+    postElement.setAttribute('draggable', true);
+    postElement.addEventListener('dragstart', (event) => {
+        event.dataTransfer.setData('id', postData.id); 
+    });
+
     return postElement;
 }
+
 
 function populatePostContainer(posts, container) {
     container.innerHTML = '';
@@ -143,7 +149,7 @@ function createSinglePostElement(postData) {
     const postFooter = document.createElement('div');
     postFooter.className = 'post-footer';
     const commentsLink = document.createElement('a');
-    // commentsLink.href = '#';
+
     commentsLink.className = 'comments-link';
     commentsLink.textContent = `${postData.comments} comments`;
     postFooter.appendChild(commentsLink);
@@ -157,7 +163,7 @@ function createSinglePostElement(postData) {
 
     // Create upvote anchor and image
     const upvoteAnchor = document.createElement('a');
-    // upvoteAnchor.href = '#'; 
+
     const upvoteImage = document.createElement('img');
     upvoteImage.src = '/images/upvote.png';
     upvoteImage.alt = 'Upvote';
@@ -172,18 +178,17 @@ function createSinglePostElement(postData) {
 
     // Create downvote anchor and image
     const downvoteAnchor = document.createElement('a');
-    // downvoteAnchor.href = '#'; 
+
     const downvoteImage = document.createElement('img');
     downvoteImage.src = '/images/downvote.png';
     downvoteImage.alt = 'Downvote';
     downvoteAnchor.appendChild(downvoteImage);
     voteContainer.appendChild(downvoteAnchor);
 
-    // Append the vote container and post content to the main post element
     postElement.appendChild(voteContainer);
     postElement.appendChild(postContent);
 
-    // Return the complete post element
+
     return postElement;
 
 }
@@ -207,7 +212,6 @@ function getGoBackHomeButton() {
     });
     return button;
 }
-
 
 const ui = {
     createRedditPostElement,

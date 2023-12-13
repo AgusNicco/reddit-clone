@@ -21,28 +21,28 @@ Lastly, this project stands as a significant stepping stone in my professional d
 
 ## HTML Mastery (20pts)
 
-- [X] form
-- [X] text
+- [X] form - index.html
+- [X] text 
 - [ ] number
 - [ ] select
 - [ ] reset
 - [X] submit
 - [X] img
 - [ ] table
-- [X] a
+- [X] a - index.html
 - [ ] ul / ol / dl
 - [ ] figure
-- [X] section / article
+- [X] section / article - index.html and ui.js (line 7)
 - [ ] aside
 - [X] nav
 
 ## CSS Mastery (50pts)
 
 - [X] appropriate selectors
-- [X] transitions
+- [X] transitions - posts-container.css (line 42)
 - [X] hover
 - [ ] nth child
-- [X] layout (flex and/or grid)
+- [X] layout (flex and/or grid) 
 - [X] colors
 - [X] background colors
 - [ ] text colors
@@ -53,32 +53,32 @@ Lastly, this project stands as a significant stepping stone in my professional d
 
 ## Interactivity (80pts)
 
-- [X] use of map and filter functions (or equivalent)
+- [X] use of map and filter functions (or equivalent) - svc.js (line 5)
 - [X] manipulating the dom
-- [X] adding / removing event listeners
+- [X] adding / removing event listeners - script.js and domain.js (line 28)
 - [X] use code across multiple files (e.g. export / import / modules)
 - [X] structured code organization (e.g. ui, domain, svc)
 - [X] async await / promises
 - [X] network requests / call API
 - [X] multiple pages
-- [X] read querystring
-- [X] local storage
+- [X] read querystring - scrpt.js
+- [X] local storage - svc.js (line 32)
 
 ## Functional Requirements
 
 - [X] Multiple pages (10pts)
 - [X] Filter bar (somewhere) (5pts)
 - [X] Make network call(s) to external API (10pts)
-- [ ] Drag & drop (15pts)
+- [X] Drag & drop (15pts) - domain.js (line 62) - domain.js (line 62)
 - [X] Shared page layout (header, footer, nav, etc.) (10pts)
 
 ## Hard Things (Infrastructure)
 (at least 25 points required, any more is extra credit)
 
-- [X] Back-end api (write your own in C# or node.js) (25pts)
-- [X] Back-end api (use a PaaS service) (20pts)
+- [X] Back-end api (write your own in C# or node.js) (25pts) - https://github.com/AgusNicco/reddit-clone-api
+- [X] Back-end api (use a PaaS service) (20pts) - https://reddit-clone-api.azurewebsites.net/posts/
 - [ ] Host your site on GitHub pages (5pts)
-- [X] Host your site on a PaaS provider (e.g. Azure static web app, vercel, etc.) (10pts)
+- [X] Host your site on a PaaS provider (e.g. Azure static web app, vercel, etc.) (10pts) - https://proud-tree-0102b7410.4.azurestaticapps.net/
 - [ ] JavaScript toolchain (sass, typescript, etc.) (5pts)
 - [ ] Entire app built using a JavaScript framework (react, svelte, jQuery, vue) (15pts)
 - [ ] Use static site generator (hugo, jekyll, etc.) (10pts)

@@ -9,15 +9,13 @@ async function expandPostContainer(container) {
     });
 }
 
-// checks if the user has scrolled to the bottom of the page
 function isAtBottom() {
-    const tolerance = 100; // How close to the bottom
+    const tolerance = 100; 
     const scrollPosition = window.innerHeight + window.scrollY;
     const bottomPosition = document.body.offsetHeight;
     return (bottomPosition - scrollPosition) < tolerance;
 }
 
-// called when user scrolls
 const debouncedScrollHandler = () => {
     if (isAtBottom()) {
         const postsContainer = document.getElementById('posts-container');
@@ -61,10 +59,25 @@ async function search(term) {
     postsContainer.appendChild(goBackHomeButton); 
 }
 
+function makeSearchBarDroppable() {
+    const searchBar = document.getElementById('search-bar');
+    searchBar.addEventListener('dragover', (e) => {
+        e.preventDefault();
+    });
+
+    searchBar.addEventListener('drop', (event) =>{
+        event.preventDefault(); 
+        const data = event.dataTransfer.getData('id');
+        window.location.href = "/post.html?id="+data; 
+        console.log(data);             
+    });
+}
+
 const domain = {
     debouncedScrollHandler,
     submitSearchHandler,
-    search
+    search,
+    makeSearchBarDroppable
 }
 export default domain;
 

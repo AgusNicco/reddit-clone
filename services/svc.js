@@ -29,7 +29,6 @@ async function fetchPostByID(postID) {
     return post;
 }
 
-// retrieve the index from localStorage and also update it
 function getIndexFromLocalStorage() {
     let index = parseInt(localStorage.getItem('post-index'), 10);
     if (isNaN(index)) {

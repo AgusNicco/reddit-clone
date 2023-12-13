@@ -8,6 +8,7 @@ const postsContainer = document.getElementById("posts-container");
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const searchTerm = urlParams.get('search');
+domain.makeSearchBarDroppable();
 
 if (searchTerm) {
     domain.search(searchTerm);
@@ -17,3 +18,5 @@ else {
     window.addEventListener('scroll', domain.debouncedScrollHandler);
     document.getElementById('search-form').addEventListener('submit', domain.submitSearchHandler);
 }
+
+
