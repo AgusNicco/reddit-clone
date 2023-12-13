@@ -69,7 +69,7 @@ Lastly, this project stands as a significant stepping stone in my professional d
 - [X] Multiple pages (10pts)
 - [X] Filter bar (somewhere) (5pts)
 - [X] Make network call(s) to external API (10pts)
-- [X] Drag & drop (15pts) - domain.js (line 62) - domain.js (line 62)
+- [X] Drag & drop (15pts) - domain.js (line 62) - domain.js (line 62)  (can drag post and drop on searchbar)
 - [X] Shared page layout (header, footer, nav, etc.) (10pts)
 
 ## Hard Things (Infrastructure)
